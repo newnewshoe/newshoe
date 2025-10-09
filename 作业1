@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("NO\n");//我是人类，不是ai
+    return 0;
+}
+
+
+
+
