@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+// 枚举
+typedef enum 
+{
+    GPIO_Speed_2MHz,
+    GPIO_Speed_10MHz,
+    GPIO_Speed_50MHz
+} GPIO_Speed_Type;
+
+// 结构体
+typedef struct
+{
+    GPIO_Speed_Type GPIO_Speed;
+} GPIO_Structure;
+
+
+void GPIO_StructureInit(GPIO_Structure* GPIO_InitStruct) 
+{
+    GPIO_InitStruct->GPIO_Speed = GPIO_Speed_2MHz;
+}
+
+int main() {
+    
+    GPIO_Structure myGPIO;
+    
+   
+    GPIO_StructureInit(&myGPIO);
+    
+    // 验证
+    printf("GPIO Speed: %d\n", myGPIO.GPIO_Speed);
+    
+    return 0;
+}
+
+
+4.
+
+#include "RM.h"
+#include "---.h"
+
+void Start(void)
+{
+   void I2C_Start(void);
+void I2C_Stop(void);
+}
+...
+
+
+
+
+
+
+
